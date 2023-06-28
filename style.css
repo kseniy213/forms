@@ -1,0 +1,186 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 50px;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+.forms{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container{
+    display: grid;
+    gap: 15px;
+}
+
+.forms-title{
+    color: #6F7482;
+    font-size: 16px;
+    line-height: 144%;
+    letter-spacing: 0.16px;
+    margin-bottom: 2px;
+    display: inline-block;
+}
+
+.forms-input{
+    padding: 12px;
+    color: #3B4256;
+    font-size: 16px;
+    line-height: 144%;
+    letter-spacing: 0.16px;
+    border-radius: 4px;
+    background: #F8FAFC;
+    border: 1px solid transparent;
+    outline: 0;
+    display: inline-block;
+}
+
+.forms-input:focus{
+    border-color: blue ;
+}
+
+.forms-input::placeholder{
+    color: #B8BCCA;
+}
+
+.checkbox{
+    display: inline-flex; 
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox-input{
+   display: none;
+}
+
+.checkbox-input:checked ~ .checkbox-body .checkbox-icon{
+    background: #3B4256;
+}
+
+.checkbox-input:checked ~ .checkbox-body .checkmark{
+   opacity: 1;
+}
+
+.checkbox-input:disabled ~ .checkbox-body .checkbox-icon {
+    background: #B8BCCA ;
+    border-color: #B8BCCA;
+ }
+
+.checkbox-body{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.checkbox-icon{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border: 2px solid #3B4256;
+    border-radius: 4px;
+    background: transparent;
+    position: relative;
+}
+
+.checkbox-text{
+    color: #3B4256;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.checkmark{
+    opacity: 0;
+    transition: .2s all ease-in-out;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 3px ) ;
+    width: 8px;
+    height: 14px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg); 
+}
+
+.radio{
+    font-family: 'Poppins', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;}
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.toggle-switch {
+    display: inline-block;
+    background: #ccc;
+    border-radius: 16px;
+    width: 58px;
+    height: 32px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+  }
+
+.toggle-switch:before, .toggle-switch:after {
+  content: "";
+}
+
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: left 0.25s;
+}
+
+
+.toggle-checkbox:checked + .toggle-switch {
+    background: #3B4256;
+  }
+
+.toggle-checkbox:checked + .toggle-switch:before {
+    left: 30px;
+  }
+
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+
+
+  
+  
+  
+ 
+ 

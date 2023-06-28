@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Hello forms</h1>
+    <div class="container">
+        <label class="forms">
+            <span class="forms-title">Text</span>
+            <input class="forms-input" type="text" name="text" placeholder="Your text">
+        </label>
+
+        <label class="forms">
+            <span class="forms-title">Password</span>
+            <input class="forms-input" type="password" name="password" placeholder="Password">
+        </label>
+    
+        <label class="forms">
+            <span class="forms-title">Bio </span>
+            <textarea class="forms-input" type="text" name="text" placeholder="Your bio"></textarea>
+        </label>
+
+        <label class="forms">
+            <span class="forms-title">Gender</span>
+            <select class="forms">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </label>
+
+        <label class="checkbox">
+            <input class="checkbox-input" type="checkbox" name="text"> 
+            <div class="checkbox-body">
+                <span class="checkbox-icon">
+                    <span class="checkmark"></span>
+                </span>
+                <span class="checkbox-text">Text</span>
+            </div> 
+        </label>
+
+        <div class="radio">
+            <p>Gender</p>
+            <div>
+               <input tabindex="4" checked type="radio" name="gender" value="male"/>Male
+            </div>
+            <div>
+                <input tabindex="4" type="radio" name="gender" value="female"/>Female
+        </div>
+
+             
+         <label class="toggle">
+                <input class="toggle-checkbox" type="checkbox">
+                <div class="toggle-switch"></div>
+                <span class="toggle-label">Are u agree?</span>
+         </label>
+    </div>
+</body>
+</html>
